@@ -72,16 +72,19 @@ export default function Navigation() {
       {/* Mobile menu */}
       <DisclosurePanel className="sm:hidden flex justify-end">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((path) => (
-            <DisclosureButton
-              key={path.name}
-              as="a"
-              href={path.href}
-              className="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-            >
-              {path.name}
-            </DisclosureButton>
-          ))}
+          {navigation
+            .slice()
+            .reverse()
+            .map((path) => (
+              <DisclosureButton
+                key={path.name}
+                as="a"
+                href={path.href}
+                className="hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >
+                {path.name}
+              </DisclosureButton>
+            ))}
         </div>
       </DisclosurePanel>
     </Disclosure>
