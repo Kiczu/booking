@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "lint-staged",
     "preview": "vite preview",
     "prepare": "cd .. && husky install client/.husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
     "react": "^18.3.1",
