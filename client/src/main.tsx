@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { paths } from "./paths";
 import Layout from "./Layout/Layout";
-import UserProfile from "./pages/UserProfile/UserProfile";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import UserProfile from "./pages/UserProfile/UserProfile";
+import SignIn from "./pages/SignIn/SignIn";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: paths.USER_PROFILE,
         element: <UserProfile />,
+      },
+      {
+        path: paths.SIGN_IN,
+        element: <SignIn />,
       },
     ],
   },
