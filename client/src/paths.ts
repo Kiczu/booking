@@ -6,4 +6,5 @@ export const paths = {
   PATH_C: "/c",
   SIGN_IN: "/sign-in",
   SIGN_UP: "/sign-up",
+  USER_PROFILE: "/user-profile/:userId",
 };
