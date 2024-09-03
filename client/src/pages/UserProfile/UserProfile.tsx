@@ -1,9 +1,9 @@
 const UserProfile = () => {
-    return(
-        <>
-            <p>Strona Uzytkownika</p>
-        </>
-    )
-}
+  return (
+    <>
+      <p>Strona Uzytkownika</p>
+    </>
+  );
+};
 
 export default UserProfile;
